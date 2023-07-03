@@ -10,4 +10,5 @@ class StationSerializer(serializers.HyperlinkedModelSerializer):
 class WeatherDataSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = weather_data
-        fields = ("id","date",'hour',"cod_city", "precipitation")
+        
+        fields = ("id","date",'hour',"cod_city", "precipitation", "dry_bulb_temperature", "wet_bulb_temperature", "high_temperature", "low_temperature", "relative_humidity", "relative_humidity_avg", "pressure", "sea_pressure", "wind_direction", "wind_speed_avg", "cloud_cover", "evaporation" )
